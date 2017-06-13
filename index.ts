@@ -1,6 +1,13 @@
-interface Todo {
-  name: string,
-  complelted?: boolean
-}
+console.log(Object.prototype)
 
-var todo: Todo = {name: 'aaa', complelted: true}
+let todo = {}
+
+console.log(todo)
+
+let a = []
+
+let b = function() {}
+
+console.log(a)
+
+console.dir(b)
