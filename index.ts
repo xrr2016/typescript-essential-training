@@ -1,13 +1,6 @@
-const container = document.getElementById('container')
-
-const todo = {
-  id: 123,
-  name: 'Learning TypeScript.',
-  completed: true
+interface Todo {
+  name: string,
+  complelted?: boolean
 }
 
-container.innerHTML = `
-  <div todo='${todo.id}' class="collection-item">
-    <i class="${todo.completed ? 'blue-text text-darken-2' : 'hide'} material-icons">thumb_up</i>
-    <span class="name">${todo.name}</span>
-  </div>`
+var todo: Todo = {name: 'aaa', complelted: true}
