@@ -1,13 +1,21 @@
-console.log(Object.prototype)
+interface Todo {
+  name: string
+  state: TodoState
+}
 
-let todo = {}
+enum TodoState {
+  New = 1,
+  Active,
+  Completed,
+  Deleted
+}
 
-console.log(todo)
-
-let a = []
-
-let b = function() {}
-
-console.log(a)
-
-console.dir(b)
+let todo = {
+  name: 'learning',
+  get state() {
+    return TodoState.Completed
+  },
+  set state(newState) {
+    this._state = newState
+  }
+}
